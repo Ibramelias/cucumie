@@ -8,14 +8,16 @@
 }
 
 nav {
-    margin-top: 50%;
+    padding-top: 25%;
     display: grid;
 }
 
-.aside__nav-links {
-    display: grid;
+.aside__nav-li {
+    list-style: none;
+    padding-top: 30px;
 }
 
 .logo {
-    width: 55%;
+    width: 70%;
+    margin-bottom: 20px;
 }
