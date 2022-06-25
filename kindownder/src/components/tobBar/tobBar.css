@@ -1,0 +1,53 @@
+.top__bar {
+    background-color: rgb(14, 14, 14);
+    height: 8vh;
+}
+
+
+.top__bar-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.border {
+    border-right: 1px solid #fff;
+    height: 40px;
+}
+
+.top__bar-li {
+    padding: 20px;
+}
+
+li a {
+    color: #B3B3B3;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+li a:hover {
+    color: #fff;
+}
+
+.signIn {
+    color: #B3B3B3;
+    background: transparent;
+    border: none;
+}
+
+.logIn {
+    position: relative;
+    background-color: var #ffffff;
+    color: #000000;
+    border-radius: 500px;
+    font-size: inherit;
+    padding-block: 12px;
+    padding-inline: 32px;
+    border: none;
+}
+
+ion-icon {
+    margin-right: 10px;
+    font-size: 25px;
+}

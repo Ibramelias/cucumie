@@ -1,8 +1,14 @@
 import './App.css';
+import Home from './pages/home/Home';
+import Nav from './components/nav/nav';
+// import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <div></div>
+    <div className='mainPage'>
+      <Home />
+      <Nav />
+    </div>
   );
 }
 
