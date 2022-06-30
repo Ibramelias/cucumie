@@ -1,6 +1,6 @@
 import "./landingPage.css";
 import Lottie from 'react-lottie';
-import animationData from '../../lotties/Cycle-Animation.json';
+import animationData from '../../lotties/Cycle-animation.json';
 
 export default function LandingPage() {
     const defaultOptions = {
