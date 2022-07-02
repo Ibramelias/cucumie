@@ -1,5 +1,10 @@
 .main-page {
-    background-color: #000;
+    background-color: rgb(37, 36, 36);
     padding-top: 5%;
     height: 100vh;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
 }

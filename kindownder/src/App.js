@@ -1,7 +1,7 @@
 import './App.css';
 // import Home from './pages/home/Home';
 // import Nav from './components/nav/nav';
-import LandingPage from './pages/landingPage/landingPage';
+import LandingPage from './pages/landingPage';
 // import Container from 'react-bootstrap/Container';
 
 function App() {
