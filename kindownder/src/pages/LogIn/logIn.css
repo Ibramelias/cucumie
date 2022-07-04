@@ -1,0 +1,133 @@
+.logIn_section {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    /* justify-content: center; */
+}
+
+.logIn_page-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    padding-bottom: 10px;
+}
+
+/* .logIn_social-btns {
+    text-align: center;
+} */
+
+.logIn_another-option_section {
+    width: 30%;
+}
+
+.logInPage-another-option {
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 0px auto 1em;
+    color: rgb(127, 127, 127);
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+
+.logInPage-another-option::before,
+.logInPage-another-option::after {
+    border-top: 1px solid rgb(204, 204, 204);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 43%;
+}
+
+.logIn_section h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    ;
+}
+
+.logIn_page-logo {
+    padding-top: 10px;
+    width: 8%;
+}
+
+.logIn_form {
+    display: flex;
+    /* padding-left: 30%; */
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+label {
+    padding: 15px 0 5px 0;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+}
+
+input {
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+}
+
+/* 
+.logIn_page-btn {
+    display: flex;
+    justify-content: center;
+   
+} */
+
+.login_btn-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.login_btn-section a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Righteous", cursive;
+    font-size: 15px;
+}
+
+.logIn_page-btn button {
+    padding: 16px 48px;
+    border: none;
+    border-radius: 500px;
+    background-color: orange;
+    font-family: 'Righteous', cursive;
+}
+
+.newaccount_btn button {
+    padding: 16px 48px;
+    border: none;
+    border-radius: 500px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 204, 204);
+    font-family: 'Righteous', cursive;
+}
+
+
+.border {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    width: 30%;
+    /* margin-top: 50px; */
+}
+
+
+
+
+.prompt-newAccount-title {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: "Righteous", cursive;
+    text-align: center;
+}

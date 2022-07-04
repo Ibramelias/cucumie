@@ -53,7 +53,6 @@ function SignUp() {
                 </div>
             </Container>
         </div>
-
     )
 }
 

@@ -1,8 +1,8 @@
 import './App.css';
 // import Home from './pages/home/Home';
 // import Nav from './components/nav/nav';
-import LandingPage from './pages/landingPage';
-import SignUp from './pages/SignUp';
+// import LandingPage from './pages/landingPage';
+import LogIn from './pages/LogIn'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Nav /> */}
       {/* <LandingPage /> */}
     </div>,
-    <SignUp />
+    <LogIn />
   );
 }
 
