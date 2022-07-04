@@ -1,4 +1,5 @@
 import React from "react";
+import Btn from '../../components/Button'
 // import LottieAnimi from "../../lotties/LottieAnimation";
 import logo from '../../assets/logo.png';
 import { Container } from "react-bootstrap";
@@ -14,10 +15,10 @@ function SignUp() {
                 <div className="signup_section">
                     <h1>Sign Up for free to start listening</h1>
                     <div className="signup_social-btns">
-                        <p>sign up with facebook btn</p>
-                        <p>sign up with google btn</p>
+                        <Btn text='Sign up with facebook' type="social-media facebook" />
+                        <Btn text='sign up with google' type="social-media google" />
                     </div>
-                    <div className="signUp_anotherOption">
+                    <div className="signUp_another-option-section">
                         <p className="signupPage-another-option">or</p>
                         <h2>Sign up with your email address</h2>
                         <form className="signup_form">
@@ -46,7 +47,7 @@ function SignUp() {
                                 placeholder="Enter a profile name."
                             />
                             <div className="signup_page-btn">
-                                <button>SignUp</button>
+                                <Btn text='sign up' type="signup-btn" />
                             </div>
                         </form>
                     </div>

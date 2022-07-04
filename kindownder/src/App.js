@@ -3,6 +3,7 @@ import './App.css';
 // import Nav from './components/nav/nav';
 // import LandingPage from './pages/landingPage';
 import LogIn from './pages/LogIn'
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Nav /> */}
       {/* <LandingPage /> */}
     </div>,
-    <LogIn />
+    // <LogIn />
+    <SignUp />
   );
 }
 

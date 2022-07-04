@@ -17,3 +17,55 @@
 .btn.btn--secondary {
     background-color: #FF8E3A;
 }
+
+.btn.btn--social-media {
+    width: 130%;
+    border-radius: 500px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Righteous", cursive;
+
+}
+
+.btn.btn--social-media.facebook {
+    color: #fff;
+    background-color: #4267B2;
+}
+
+.btn.btn--social-media.google {
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.btn.btn--logIn {
+    padding: 16px 48px;
+    width: 100%;
+    border: none;
+    border-radius: 500px;
+    background-color: orange;
+    font-family: 'Righteous', cursive;
+}
+
+.btn.btn--new_account-btn {
+    padding: 16px 48px;
+    width: 100%;
+    border: none;
+    border-radius: 500px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 204, 204);
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn.btn--signup-btn {
+    width: auto;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 500px;
+    background-color: orange;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

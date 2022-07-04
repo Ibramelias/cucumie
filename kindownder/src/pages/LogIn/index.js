@@ -1,4 +1,6 @@
 import React from "react";
+import Btn from '../../components/Button';
+
 // import LottieAnimi from "../../lotties/LottieAnimation";
 import logo from '../../assets/logo.png';
 import { Container } from "react-bootstrap";
@@ -14,8 +16,8 @@ function LogIn() {
                 <div className="logIn_section">
                     <h1>To continue, log in</h1>
                     <div className="logIn_social-btns">
-                        <p>sign up with facebook btn</p>
-                        <p>sign up with google btn</p>
+                        <Btn text='continue with facebook' type="social-media facebook" />
+                        <Btn text='continue with google' type="social-media google" />
                     </div>
                     <div className="logIn_another-option_section">
                         <p className="logInPage-another-option">or</p>
@@ -35,7 +37,7 @@ function LogIn() {
                             <div className="login_btn-section">
                                 <a href="#">Froget your password ?</a>
                                 <div className="logIn_page-btn">
-                                    <button>LOG IN</button>
+                                    <Btn text='Log In' type="logIn" />
                                 </div>
                             </div>
                         </form>
@@ -46,7 +48,7 @@ function LogIn() {
                             Don't have an acconut ?
                         </p>
                         <div className="newaccount_btn">
-                            <button>Create a new account</button>
+                            <Btn text='Easy! Sign up now' type="new_account-btn" />
                         </div>
                     </div>
                 </div>
