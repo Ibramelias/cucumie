@@ -1,20 +1,19 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-// import Home from './pages/home/Home';
-// import Nav from './components/nav/nav';
-// import LandingPage from './pages/landingPage';
+import LandingPage from './pages/landingPage';
 import LogIn from './pages/LogIn'
 import SignUp from './pages/SignUp';
-
 function App() {
   return (
-    <div className='mainPage'>
-      {/* <Home />
-      <Nav /> */}
-      {/* <LandingPage /> */}
-    </div>,
+    <div className=''>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LogIn />} />
+      </Routes>
+
+    </div>
     // <LogIn />
-    <SignUp />
   );
 }
-
 export default App;
