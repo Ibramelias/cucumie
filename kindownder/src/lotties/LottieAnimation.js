@@ -1,5 +1,6 @@
-import Lottie from 'react-lottie';
 import animationData from '../lotties/Cycle-animation.json';
+import Lottie from 'react-lottie';
+import "./lottie.css"
 
 function LottieAnimi() {
     const defaultOptions = {
@@ -11,11 +12,13 @@ function LottieAnimi() {
         }
     };
     return (
-        <Lottie
-            options={defaultOptions}
-            height={350}
-            width={350}
-        />
+        <div className="logingPage">
+            <Lottie
+                options={defaultOptions}
+                height={500}
+                width={500}
+            />
+        </div>
     )
 }
 

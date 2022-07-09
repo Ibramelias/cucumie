@@ -1,6 +1,6 @@
 import './tobBar.css'
 import { useEffect } from "react";
-import GetUserPlayList from '../../components/GetPlayList Btn/getPlaylist';
+// import GetUserPlayList from '../../components/GetPlayList Btn/getPlaylist';
 
 
 const CLIENT_ID = "";
@@ -25,8 +25,6 @@ const getReturnedPramsFromSpotifyAuth = (hash) => {
     }, {});
     return paramSplitUp
 }
-
-
 
 export default function TopBar() {
     useEffect(() => {
@@ -57,7 +55,7 @@ export default function TopBar() {
                     <li className='border'></li>
                     <li className='top__bar-li'><button className='signIn'>Sign In</button></li>
                     <li className='top__bar-li' onClick={handelLogIN}><button className='logIn'>Log In spotify</button></li>
-                    <GetUserPlayList />
+                    {/* <GetUserPlayList /> */}
                 </ul>
             </div>
         </div>

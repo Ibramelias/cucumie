@@ -1,12 +1,13 @@
-import React from "react";
-import Btn from '../../components/Button';
 
-// import LottieAnimi from "../../lotties/LottieAnimation";
+import Btn from '../../components/Button';
 import logo from '../../assets/logo.png';
 import { Container } from "react-bootstrap";
 import "./logIn.css";
 
+
+
 function LogIn() {
+
     return (
         <div className='logIn_page'>
             <div className="logIn_page-header">
@@ -21,16 +22,19 @@ function LogIn() {
                     </div>
                     <div className="logIn_another-option_section">
                         <p className="logInPage-another-option">or</p>
+
                         <form className="logIn_form">
                             <label>Email address or username</label>
                             <input
                                 required
+                                name="emial"
                                 type="email"
                                 placeholder="Email address or username"
                             />
                             <label>Password</label>
                             <input
                                 required
+                                name="password"
                                 type="password"
                                 placeholder="Password."
                             />

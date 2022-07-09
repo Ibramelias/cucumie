@@ -1,15 +1,19 @@
+import { link } from "react-router-dom"
 import React from "react";
 import Btn from '../../components/Button'
-// import LottieAnimi from "../../lotties/LottieAnimation";
 import logo from '../../assets/logo.png';
 import { Container } from "react-bootstrap";
 import "./signUp.css";
 
 function SignUp() {
+
     return (
         <div className='signup_page'>
             <div className="signup_page-header">
-                <img className='signup_page-logo' src={logo} alt="logo"></img>
+                <Link to="/">
+                    <img className='signup_page-logo' src={logo} alt="logo"></img>
+                </Link>
+
             </div>
             <Container>
                 <div className="signup_section">
@@ -21,28 +25,33 @@ function SignUp() {
                     <div className="signUp_another-option-section">
                         <p className="signupPage-another-option">or</p>
                         <h2>Sign up with your email address</h2>
+
                         <form className="signup_form">
                             <label>What's your email?</label>
                             <input
                                 required
+                                name="email"
                                 type="email"
                                 placeholder="Enter your email."
                             />
                             <label>Confirm your email?</label>
                             <input
                                 required
+                                name="email"
                                 type="email"
                                 placeholder="Enter your email again."
                             />
                             <label>Create a password</label>
                             <input
                                 required
+                                name="password"
                                 type="password"
                                 placeholder="Create a password."
                             />
                             <label>What should we call you?</label>
                             <input
                                 required
+                                name="userName"
                                 type="text"
                                 placeholder="Enter a profile name."
                             />

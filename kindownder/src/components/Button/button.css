@@ -11,11 +11,13 @@
 
 .btn.btn--primary {
     background-color: #1DB954;
+    border-radius: 600px;
 }
 
 
 .btn.btn--secondary {
     background-color: #FF8E3A;
+    border-radius: 600px;
 }
 
 .btn.btn--social-media {
