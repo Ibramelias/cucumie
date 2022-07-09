@@ -1,4 +1,4 @@
-import { link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import React from "react";
 import Btn from '../../components/Button'
 import logo from '../../assets/logo.png';
@@ -10,10 +10,9 @@ function SignUp() {
     return (
         <div className='signup_page'>
             <div className="signup_page-header">
-                <Link to="/">
+                <Link className="logo-link" to="/">
                     <img className='signup_page-logo' src={logo} alt="logo"></img>
                 </Link>
-
             </div>
             <Container>
                 <div className="signup_section">

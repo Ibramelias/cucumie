@@ -67,7 +67,12 @@
 
 .signup_page-logo {
     padding-top: 10px;
-    width: 8%;
+    width: 20%;
+
+}
+
+.logo-link {
+    text-align: center;
 }
 
 .signup_form {

@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import Btn from '../../components/Button';
 import logo from '../../assets/logo.png';
 import { Container } from "react-bootstrap";
@@ -11,7 +11,9 @@ function LogIn() {
     return (
         <div className='logIn_page'>
             <div className="logIn_page-header">
-                <img className='logIn_page-logo' src={logo} alt="logo"></img>
+                <Link className="logo-link" to="/">
+                    <img className='logIn_page-logo' src={logo} alt="logo"></img>
+                </Link>
             </div>
             <Container>
                 <div className="logIn_section">

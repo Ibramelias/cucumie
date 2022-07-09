@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Video from "../../components/video/Video.mp4"
+import Video from "../../components/video/homepage_video.mp4";
 import Btn from "../../components/Button";
 import "./landingPage.css";
 
