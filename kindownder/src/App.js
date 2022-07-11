@@ -1,3 +1,4 @@
+import { AuthProvider } from "./components/AuthContext/AuthContext";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/landingPage';
@@ -21,12 +22,14 @@ function App() {
     <>
       {loading ? <LottieAnimi /> :
         <div className=''>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/login" element={<LogIn />} />
-            <Route path="/profile" element={<Home />} />
-          </Routes>
+          <AuthProvider>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/login" element={<LogIn />} />
+              <Route path="/profile" element={<Home />} />
+            </Routes>
+          </AuthProvider>
         </div>
       }
     </>
