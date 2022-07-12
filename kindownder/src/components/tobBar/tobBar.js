@@ -1,9 +1,9 @@
-import './tobBar.css'
-import { useEffect } from "react";
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useAuth } from "../AuthContext/AuthContext";
+import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
+import { useEffect } from "react";
+import './tobBar.css'
 // import GetUserPlayList from '../../components/GetPlayList Btn/getPlaylist';
 
 
@@ -69,8 +69,8 @@ export default function TopBar() {
         <div className='top__bar'>
             <div className='top__bar-links'>
                 <ul className='top__bar-ul'>
+                    <li className='top__bar-li-userName'><strong>Hello {currentUser.email}</strong></li>
                     <li className='top__bar-li'><a href='#'>Premium</a></li>
-                    <li className='top__bar-li'><a href='#'>Support</a></li>
                     <li className='top__bar-li'><a href='#'>Download</a></li>
                     <li className='top__bar-li'><button onClick={handleLogout} className='logout'>Log out</button></li>
                     <li className='top__bar-li' onClick={handelLogIN}><button className='logIn'>Log In spotify</button></li>
@@ -78,7 +78,7 @@ export default function TopBar() {
                 </ul>
             </div>
             {error && <Alert variant="danger">{error}</Alert>}
-            <p>Hello </p>{currentUser.email}
+            {/* <p>Hello </p>{currentUser.email} */}
         </div>
     )
 }

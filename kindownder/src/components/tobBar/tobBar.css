@@ -1,6 +1,6 @@
 .top__bar {
     background-color: rgb(14, 14, 14);
-    height: 8vh;
+    height: 10vh;
 }
 
 
@@ -13,6 +13,10 @@
 
 .top__bar-li {
     padding: 20px;
+}
+
+strong {
+    color: #fff700;
 }
 
 li a {
