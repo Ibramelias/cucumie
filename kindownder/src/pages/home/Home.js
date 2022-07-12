@@ -5,16 +5,11 @@ import './home.css';
 
 export default function Home() {
     return (
-
         <div className='homePage'>
-            <Link to="/profile">
-                <TopBar />
-                <Nav />
-                {/* <button onClick={handelLogIN}>Login to  sporifty</button> */}
-                {/* <GetUserPlayList /> */}
-            </Link>
+            <TopBar />
+            <Nav />
+            {/* <button onClick={handelLogIN}>Login to  sporifty</button>
+                <GetUserPlayList /> */}
         </div >
-
-
     )
 }

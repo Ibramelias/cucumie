@@ -11,11 +11,6 @@
     float: right;
 }
 
-.border {
-    border-right: 1px solid #fff;
-    height: 40px;
-}
-
 .top__bar-li {
     padding: 20px;
 }
@@ -38,16 +33,29 @@ li a:hover {
 
 .logIn {
     position: relative;
-    background-color: var #ffffff;
-    color: #000000;
+    background-color: #fff;
+    color: #000;
     border-radius: 500px;
     font-size: inherit;
     padding-block: 12px;
     padding-inline: 32px;
+    font-weight: 600;
     border: none;
+}
+
+.logout {
+    background-color: #fff;
+    color: #000;
+    font-size: inherit;
+    padding-block: 12px;
+    padding-inline: 32px;
+    border-radius: 500px;
+    font-weight: 600;
+    border: none
 }
 
 ion-icon {
     margin-right: 10px;
     font-size: 25px;
+
 }

@@ -1,4 +1,5 @@
 import { AuthProvider } from "./components/AuthContext/AuthContext";
+import PrivateRoute from "./components/privateRoute/privateRoute";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/landingPage';
@@ -24,10 +25,10 @@ function App() {
         <div className=''>
           <AuthProvider>
             <Routes>
+              <Route path="/profile" element={<PrivateRoute><Home /></PrivateRoute>} />
               <Route path="/" element={<LandingPage />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={<LogIn />} />
-              <Route path="/profile" element={<Home />} />
             </Routes>
           </AuthProvider>
         </div>

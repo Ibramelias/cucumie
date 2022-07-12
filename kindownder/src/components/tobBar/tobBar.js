@@ -1,5 +1,9 @@
 import './tobBar.css'
 import { useEffect } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../AuthContext/AuthContext";
+import { Alert } from "react-bootstrap";
 // import GetUserPlayList from '../../components/GetPlayList Btn/getPlaylist';
 
 
@@ -27,6 +31,22 @@ const getReturnedPramsFromSpotifyAuth = (hash) => {
 }
 
 export default function TopBar() {
+    const [error, setError] = useState();
+    const { currentUser, logout } = useAuth();
+    let navigate = useNavigate();
+
+    async function handleLogout() {
+        setError('')
+
+        try {
+            await logout();
+            navigate('/')
+        } catch (err) {
+            setError("Faild to log out")
+            console.log(err)
+        }
+    }
+
     useEffect(() => {
         if (window.location.hash) {
             const {
@@ -52,12 +72,13 @@ export default function TopBar() {
                     <li className='top__bar-li'><a href='#'>Premium</a></li>
                     <li className='top__bar-li'><a href='#'>Support</a></li>
                     <li className='top__bar-li'><a href='#'>Download</a></li>
-                    <li className='border'></li>
-                    <li className='top__bar-li'><button className='signIn'>Sign In</button></li>
+                    <li className='top__bar-li'><button onClick={handleLogout} className='logout'>Log out</button></li>
                     <li className='top__bar-li' onClick={handelLogIN}><button className='logIn'>Log In spotify</button></li>
                     {/* <GetUserPlayList /> */}
                 </ul>
             </div>
+            {error && <Alert variant="danger">{error}</Alert>}
+            <p>Hello </p>{currentUser.email}
         </div>
     )
 }
