@@ -12,8 +12,8 @@ export function useAuth() {
 export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState({})
 
-    function signup(email, password) {
-        return createUserWithEmailAndPassword(auth, email, password)
+    function signup(email, password, username) {
+        return createUserWithEmailAndPassword(auth, email, password, username)
     }
 
     function login(email, password) {
@@ -23,6 +23,7 @@ export function AuthProvider({ children }) {
     function logout() {
         return auth.signOut()
     }
+
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {

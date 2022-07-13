@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import TopBar from '../../components/tobBar/tobBar';
 import Nav from '../../components/nav/nav';
 import './home.css';

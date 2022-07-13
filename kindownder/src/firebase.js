@@ -1,15 +1,21 @@
 import firebase from "firebase/compat/app";
 import { getAuth } from "firebase/auth";
 
+
 const app = firebase.initializeApp({
     apiKey: "AIzaSyDEs8FmikALniBCjr2SMtFsGRnCOkI2Zxw",
-    authDomain: "music-b92de.firebaseapp.com",
-    projectId: "music-b92de",
-    storageBucket: "music-b92de.appspot.com",
-    messagingSenderId: "950147439345",
-    appId: "1:950147439345:web:fe52879f2c727f35fd2750"
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESEEAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
 })
+
 
 
 export const auth = getAuth()
 export default app;
+
+
+
+

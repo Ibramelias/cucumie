@@ -45,7 +45,7 @@
     width: 100%;
     border: none;
     border-radius: 500px;
-    background-color: orange;
+    background-color: #1DB954;
     font-family: 'Righteous', cursive;
 }
 
@@ -54,7 +54,7 @@
     width: 100%;
     border: none;
     border-radius: 500px;
-    background-color: #fff;
+    background-color: #FF8E3A;
     border: 1px solid rgb(204, 204, 204);
     font-family: 'Righteous', cursive;
     letter-spacing: 1px;

@@ -10,6 +10,7 @@ function SignUp() {
     const emailRef = useRef();
     const passwordRef = useRef();
     const passwordConfimRef = useRef();
+    const userNameRef = useRef();
     const { signup } = useAuth();
     const [error, setError] = useState();
     const [loading, setLoading] = useState(false)
@@ -24,7 +25,7 @@ function SignUp() {
         try {
             setError("")
             setLoading(true)
-            await signup(emailRef.current.value, passwordRef.current.value);
+            await signup(emailRef.current.value, passwordRef.current.value, userNameRef.current.value);
             navigate("/profile")
         } catch (err) {
             setError("Failed to create an account")
@@ -80,13 +81,13 @@ function SignUp() {
                             />
                             <label>What should we call you?</label>
                             <input
-                                name="userName"
-                                type="text"
+                                ref={userNameRef}
+                                type="username"
+                                autoComplete="on"
                                 placeholder="Enter a profile name."
                             />
                             <div className="signup_page-btn">
-                                {/* <Btn disabled={loading} text='sign up' type="signup-btn" /> */}
-                                <button type='submit' disabled={loading}>Submit</button>
+                                <button className="btn btn--signup-btn" type='submit' disabled={loading}>Sign Up</button>
                             </div>
                         </form>
                     </div>

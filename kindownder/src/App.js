@@ -10,6 +10,7 @@ import Home from './pages/home/Home';
 import './App.css';
 
 
+
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {

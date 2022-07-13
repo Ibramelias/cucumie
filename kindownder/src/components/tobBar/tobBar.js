@@ -69,7 +69,7 @@ export default function TopBar() {
         <div className='top__bar'>
             <div className='top__bar-links'>
                 <ul className='top__bar-ul'>
-                    <li className='top__bar-li-userName'><strong>Hello {currentUser.email}</strong></li>
+                    <li className='top__bar-li-userName'><strong>Hello {currentUser.username}</strong></li>
                     <li className='top__bar-li'><a href='#'>Premium</a></li>
                     <li className='top__bar-li'><a href='#'>Download</a></li>
                     <li className='top__bar-li'><button onClick={handleLogout} className='logout'>Log out</button></li>

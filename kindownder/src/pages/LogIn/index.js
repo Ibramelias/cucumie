@@ -67,8 +67,7 @@ function LogIn() {
                             <div className="login_btn-section">
                                 <a href="#">Froget your password ?</a>
                                 <div className="logIn_page-btn">
-                                    {/* <Btn text='Log In' type="logIn" /> */}
-                                    <button type='submit' disabled={loading}>Submit</button>
+                                    <button className="btn btn--logIn" type='submit' disabled={loading}>Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -79,7 +78,9 @@ function LogIn() {
                             Don't have an acconut ?
                         </p>
                         <div className="newaccount_btn">
-                            <Btn text='Easy! Sign up now' type="new_account-btn" />
+                            <Link to="/signup">
+                                <Btn text='Easy! Sign up now' type="new_account-btn" />
+                            </Link>
                         </div>
                     </div>
                 </div>
