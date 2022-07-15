@@ -7,6 +7,7 @@ import LottieAnimi from "./lotties/LottieAnimation";
 import SignUp from './pages/SignUp';
 import LogIn from './pages/LogIn'
 import Home from './pages/home/Home';
+import RestPassword from "./components/rest/Rest";
 import './App.css';
 
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={<LogIn />} />
+              <Route path="/restpassword" element={<RestPassword />} />
             </Routes>
           </AuthProvider>
         </div>

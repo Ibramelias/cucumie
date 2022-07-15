@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import React, { useRef, useState } from "react";
-import Btn from '../../components/Button'
+import Btn from '../../components/Button';
 import logo from '../../assets/logo.png';
 import { Container, Alert } from "react-bootstrap";
 import { useAuth } from "../../components/AuthContext/AuthContext";

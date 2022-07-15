@@ -1,0 +1,49 @@
+.rest_password-header {
+    background-color: #000;
+    height: 10vh;
+}
+
+.rest_password-logo {
+    padding-top: 15px;
+    width: 5%;
+}
+
+.rest_password-section {
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.rest_password-page-title {
+    letter-spacing: 1px;
+    font-family: 'Patua One', cursive;
+}
+
+.rest_password-page-p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.rest_password-input {
+    margin: 15px 0;
+    display: grid;
+    justify-content: flex-end;
+    max-width: 50%;
+}
+
+label {
+    padding-right: 20px;
+    text-align: left;
+}
+
+input {
+    width: 160%;
+    max-height: 35px;
+}
+
+
+.rest-other-option {
+    margin-top: 20px;
+    font-size: 16px;
+}
