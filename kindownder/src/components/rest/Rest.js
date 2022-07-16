@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useAuth } from "../../components/AuthContext/AuthContext";
 import { Alert, Container } from 'react-bootstrap';
 import logo from '../../assets/black_logo.png';
-// import Btn from "../../components/Button/index"
+import Btn from "../../components/Button/index"
 import "./rest.css"
 
 export default function RestPassword() {
@@ -46,11 +46,11 @@ export default function RestPassword() {
                                 type="email"
                                 autoComplete="on"
                             />
-                            <button className="btn btn--rest-btn" disabled={loading}>Submit</button>
-                            {/* <Btn disabled={loading} text='Submit' type="rest-btn" /> */}
+                            <button className="btn btn--rest-btn" disabled={loading}>Send</button>
+                            {/* <Btn text='Submit' type="rest-btn" /> */}
                         </form>
                         {/* <button >Send</button> */}
-                        <p className='rest-other-option' >If you still need help, contact us</p>
+                        <p className='rest-other-option' >If you still need help, <em>Contact us</em></p>
                     </div>
                 </Container>
             </div>
