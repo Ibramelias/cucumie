@@ -28,11 +28,11 @@
 .rest_password-input {
     margin: 15px 0;
     display: grid;
-    justify-content: flex-end;
-    max-width: 50%;
+    justify-content: center;
+    max-width: 100%;
 }
 
-label {
+/* label {
     padding-right: 20px;
     text-align: left;
 }
@@ -40,7 +40,7 @@ label {
 input {
     width: 160%;
     max-height: 35px;
-}
+} */
 
 
 .rest-other-option {
