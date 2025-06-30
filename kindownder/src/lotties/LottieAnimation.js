@@ -1,4 +1,4 @@
-import animationData from '../lotties/Cycle-animation.json';
+import animationData from '../lotties/Cycle-Animation.json';
 import Lottie from 'react-lottie';
 import "./lottie.css"
 

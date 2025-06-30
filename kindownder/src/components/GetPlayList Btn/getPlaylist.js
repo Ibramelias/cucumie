@@ -22,10 +22,16 @@ const GetUserPlayList = () => {
         }).then((res) => {
             setData(res.data);
             console.log(res)
+            res.data.itmes.forEach(function (items) {
+                const img = items.external_urls
+                console.log(img)
+            })
         }).catch((error) => {
             console.log(error)
         })
     }
+    // const img = data.items.images;
+    // console.log(img)
     return (
         <>
             <button onClick={handeGetPlayList}>Get your playlist</button>

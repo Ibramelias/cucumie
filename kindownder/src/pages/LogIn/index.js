@@ -66,7 +66,7 @@ function LogIn() {
                             />
                             <div className="login_btn-section">
                                 <Link to="/restpassword">
-                                    <p>Froget your password ?</p>
+                                    <p>Forget your password ?</p>
                                 </Link>
                                 <div className="logIn_page-btn">
                                     <button className="btn btn--logIn" type='submit' disabled={loading}>Submit</button>

@@ -7,9 +7,9 @@ import './tobBar.css'
 // import GetUserPlayList from '../../components/GetPlayList Btn/getPlaylist';
 
 
-const CLIENT_ID = "";
+const CLIENT_ID = "a0bad5639a9f4d1ba5763a93a6fed664"
 const SPOTIFY_AUTHORIZATION_ENDPOINT = "https://accounts.spotify.com/authorize";
-const REDIRECT_URL_AFTER_LOGIN = "http://localhost:3000/";
+const REDIRECT_URL_AFTER_LOGIN = "http://localhost:3000/profile"
 const SPACE_DELIMITER = "%20";
 const SCOPE = [
     "playlist-read-private",
@@ -34,6 +34,8 @@ export default function TopBar() {
     const [error, setError] = useState();
     const { currentUser, logout } = useAuth();
     let navigate = useNavigate();
+
+
 
     async function handleLogout() {
         setError('')
@@ -62,14 +64,17 @@ export default function TopBar() {
             localStorage.setItem("tokenType", token_type);
         }
     })
-    const handelLogIN = () => {
+
+    const handelLogIN = (e) => {
+        e.preventDefault()
         window.location = `${SPOTIFY_AUTHORIZATION_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL_AFTER_LOGIN}&scope=${SCOPE_URL_PARAM}&response_type=token&show_dialog=true`
+
     }
     return (
         <div className='top__bar'>
             <div className='top__bar-links'>
                 <ul className='top__bar-ul'>
-                    <li className='top__bar-li-userName'><strong>Hello {currentUser.username}</strong></li>
+                    <li className='top__bar-li-userName'><strong>Hello {currentUser.email}</strong></li>
                     <li className='top__bar-li'><a href='#'>Premium</a></li>
                     <li className='top__bar-li'><a href='#'>Download</a></li>
                     <li className='top__bar-li'><button onClick={handleLogout} className='logout'>Log out</button></li>

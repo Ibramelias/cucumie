@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useAuth } from "../../components/AuthContext/AuthContext";
 import { Alert, Container } from 'react-bootstrap';
 import logo from '../../assets/black_logo.png';
-import Btn from "../../components/Button/index"
+// import Btn from "../../components/Button/index"
 import "./rest.css"
 
 export default function RestPassword() {

@@ -21,6 +21,9 @@ function SignUp() {
         if (passwordRef.current.value !== passwordConfimRef.current.value) {
             return setError("Your password does not match")
         }
+        if (passwordRef.current.value.length <= 6) {
+            return setError("Password should be at least 6 characters")
+        }
 
         try {
             setError("")
@@ -33,7 +36,6 @@ function SignUp() {
             console.log(err)
         }
     }
-
 
 
     return (
